@@ -1,0 +1,16 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+    region:
+      static: us-east-1
+    credentials:
+      access-key: testkey
+      secret-key: testkey
+    queue:
+      uri: http://localhost:4566/
+      name: teste
+    end-point:
+      uri: http://sqs.us-east-1.localhost.localstack.cloud:4566
+server:
+  port: 8094
